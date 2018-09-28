@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="verticalMargin">27dp</dimen>
+    <dimen name="textSize1">16sp</dimen>
+    <dimen name = "textSize2">18sp</dimen>
+    <dimen name="textSize3">20sp</dimen>
+</resources>
