@@ -1,17 +1,16 @@
-package supermegadeveloper.ayana.lab3
+package supermegadeveloper.ayana.midterm
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.view.ViewPager
-import android.util.Log
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main2.*
+import supermegadeveloper.ayana.midterm.R.id.container
 
-class MainActivity : AppCompatActivity() {
+class Main2Activity : AppCompatActivity() {
 
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
         setSupportActionBar(toolbar)
 
@@ -42,13 +41,12 @@ class MainActivity : AppCompatActivity() {
         tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
 
         buttonAdd.setOnClickListener {
+            //go to todo_activity to add new
+            val intent = Intent(this, todoActivity::class.java)
+            intent.putExtra("key", "value")
+            startActivity(intent)
 
         }
 
     }
-
-
-
-
-
 }

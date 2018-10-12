@@ -34,17 +34,6 @@ class NewsActivity : AppCompatActivity() {
             val i = Intent(this, AddnewsActivity::class.java)
             startActivityForResult(i, 1)
 
-
-//            val intent = Intent(this, AddnewsActivity::class.java)
-//            intent.putExtra("key", "value")
-//            startActivity(intent)
-
-//            thread {
-//                val list = myDB?.newsDao()?.getAll()
-//                val news = News(list!!.size + 1, "Title 1", "02-02-1998", "lasdfjlsdfj")
-//                myDB.newsDao().insert(news)
-//                loadData(myDB)
-//            }
         }
 //
 //        news_item.setOnClickListener{
